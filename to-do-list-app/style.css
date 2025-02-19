@@ -14,3 +14,43 @@ body {
   font-family: "Roboto", sans-serif;
   color: #555;
 }
+
+/* Navbar Styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #31363f;
+  color: #fff;
+  padding: 1rem 2rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.navbar-heading {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+
+.theme-toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.theme-toggle-btn:hover {
+  transform: scale(1.2);
+}
+
+.theme-toggle-icon {
+  color: yellow;
+  font-size: 2.2rem;
+}
