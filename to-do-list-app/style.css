@@ -54,3 +54,15 @@ body {
   color: yellow;
   font-size: 2.2rem;
 }
+
+/* Main Wrapper Styles */
+
+.main-wrapper {
+  margin-top: 8rem;
+  padding: 2rem;
+  /* background-color: lightpink; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
