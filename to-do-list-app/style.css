@@ -80,3 +80,32 @@ body {
   border-radius: 1rem;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
 }
+
+.app-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3b3b3b;
+}
+
+/* Task Section  */
+
+.task-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.task-input {
+  /* background-color: #ffff00; */
+  padding: 1rem;
+  width: 70%;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  outline: none;
+}
+
+.task-input:focus {
+  border-color: #333333;
+}
