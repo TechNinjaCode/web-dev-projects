@@ -109,4 +109,25 @@ body {
 
 .task-input:focus {
   border-color: #333333;
+  box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.15);
+}
+
+.add-task-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #4da64d;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-btn:hover {
+  background-color: #459545;
+}
+
+.add-task-btn:active {
+  transform: scale(0.98);
 }
