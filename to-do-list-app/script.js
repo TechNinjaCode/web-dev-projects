@@ -26,3 +26,13 @@ const addTask = () => {
   //Clear input field
   taskInput.value = "";
 };
+
+// Event listener for add task button
+addTaskBtn.addEventListener("click", addTask);
+
+// Event listener to add task when enter key is pressed
+taskInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
