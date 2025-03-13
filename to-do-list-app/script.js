@@ -22,11 +22,30 @@ const addTask = () => {
   taskSpan.textContent = taskText;
   taskElement.appendChild(taskSpan);
 
+  // Create delete button
+  const deleteBtn = document.createElement("button");
+  deleteBtn.classList.add("delete-btn");
+
+  // Icon for delete button
+  const deleteIcon = document.createElement("ion-icon");
+  deleteIcon.setAttribute("name", "trash-outline");
+  deleteBtn.appendChild(deleteIcon); // Append icon to the button
+
+  // Append delete button to the task item
+  taskElement.appendChild(deleteBtn);
+
   // Append task item to the task list
   taskList.appendChild(taskElement);
 
   //Clear input field
   taskInput.value = "";
+};
+
+// Function to handle tasks
+const handleTask = (event) => {
+  if (event.target.closest(".delete-btn")) {
+    event.target.closest(".task-item").remove();
+  }
 };
 
 // Event listener for add task button
@@ -38,3 +57,6 @@ taskInput.addEventListener("keypress", (event) => {
     addTask();
   }
 });
+
+// Event listener for handling tasks
+taskList.addEventListener("click", handleTask);
