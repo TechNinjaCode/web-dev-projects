@@ -16,12 +16,14 @@ const addTask = () => {
   // Create a task item and add it to the list
   const taskElement = document.createElement("li");
   taskElement.classList.add("task-item");
-  taskList.appendChild(taskElement);
 
   //Create span element for task text and add it to the task item
   const taskSpan = document.createElement("span");
   taskSpan.textContent = taskText;
   taskElement.appendChild(taskSpan);
+
+  // Append task item to the task list
+  taskList.appendChild(taskElement);
 
   //Clear input field
   taskInput.value = "";
