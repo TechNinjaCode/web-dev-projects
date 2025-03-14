@@ -132,6 +132,36 @@ body {
   transform: scale(0.98);
 }
 
+/* Task List Styles */
+
+/* Task container styling */
+.task-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 0.5rem;
+  gap: 1rem;
+}
+
+/* Individual task styles */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 0.5rem 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+/* Task text style  */
+.task-item span {
+  font-size: 1.9rem;
+  font-weight: 500;
+  color: #3b3b3b;
+}
+
 /* Delete Button Styles */
 
 .delete-btn {
