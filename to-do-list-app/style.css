@@ -131,3 +131,21 @@ body {
 .add-task-btn:active {
   transform: scale(0.98);
 }
+
+/* Delete Button Styles */
+
+.delete-btn {
+  font-size: 2rem;
+  padding: 0.5rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.delete-btn ion-icon {
+  color: #ff0000;
+}
+
+.delete-btn:hover ion-icon {
+  color: #910000;
+}
