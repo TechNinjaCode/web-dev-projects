@@ -160,6 +160,7 @@ body {
   font-size: 1.9rem;
   font-weight: 500;
   color: #3b3b3b;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 /* Delete Button Styles */
@@ -178,4 +179,19 @@ body {
 
 .delete-btn:hover ion-icon {
   color: #910000;
+}
+
+/* Task checkbox */
+
+.checkbox {
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+.completed {
+  text-decoration: line-through;
+  font-style: italic;
+  color: #888;
 }
