@@ -147,7 +147,6 @@ body {
 .task-item {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 1rem;
   margin: 0.5rem 0.5rem;
   border: 1px solid #ddd;
@@ -161,6 +160,9 @@ body {
   font-weight: 500;
   color: #3b3b3b;
   transition: color 0.3s ease, text-decoration 0.3s ease;
+  flex: 1;
+  margin: 0 1rem;
+  text-align: left;
 }
 
 /* Delete Button Styles */
