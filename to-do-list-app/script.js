@@ -17,6 +17,12 @@ const addTask = () => {
   const taskElement = document.createElement("li");
   taskElement.classList.add("task-item");
 
+  //Create Checkbox
+  const checkBox = document.createElement("input");
+  checkBox.setAttribute("type", "checkbox");
+  checkBox.classList.add("checkbox");
+  taskElement.appendChild(checkBox);
+
   //Create span element for task text and add it to the task item
   const taskSpan = document.createElement("span");
   taskSpan.textContent = taskText;
@@ -48,6 +54,13 @@ const handleTask = (event) => {
   }
 };
 
+// Function for task completion toggle
+const toggleTask = (event) => {
+  if (event.target.classList.contains("checkbox")) {
+    event.target.nextElementSibling.classList.toggle("completed");
+  }
+};
+
 // Event listener for add task button
 addTaskBtn.addEventListener("click", addTask);
 
@@ -60,3 +73,6 @@ taskInput.addEventListener("keypress", (event) => {
 
 // Event listener for handling tasks
 taskList.addEventListener("click", handleTask);
+
+// Event Listener for task completion toggle
+taskList.addEventListener("change", toggleTask);
